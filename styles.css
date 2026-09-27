@@ -952,3 +952,79 @@ table.data a:hover { color: var(--cream); }
   color: var(--cream-muted);
 }
 .pvp-col li { margin: 0.25rem 0; }
+
+/* —— Punta Cana / dual-currency price display —— */
+.eur {
+  display: inline-block;
+  font-size: 0.78em;
+  font-weight: 400;
+  color: var(--cream-dim);
+  letter-spacing: 0.01em;
+  margin-left: 0.15em;
+}
+.price-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  line-height: 1.35;
+}
+.price-block .stay-total {
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  color: var(--teal);
+  font-weight: 500;
+}
+.price-block .avg-nt {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--cream-dim);
+}
+.price-cad {
+  font-family: var(--font-mono);
+  color: var(--teal);
+  font-weight: 500;
+}
+.gap-live {
+  font-family: var(--font-mono);
+  color: var(--brass-soft);
+  font-style: italic;
+}
+.illustrative-note {
+  font-size: 0.78rem;
+  color: var(--brass);
+  font-style: italic;
+  margin-top: 0.35rem;
+}
+.fx-note-inline {
+  font-size: 0.8rem;
+  color: var(--cream-dim);
+}
+.subnav-local {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin: 0.75rem 0 0;
+  font-size: 0.85rem;
+}
+.subnav-local a {
+  color: var(--teal);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.subnav-local a:hover {
+  color: var(--cream);
+  border-bottom-color: var(--brass-line);
+}
+.model-card.call {
+  border-color: rgba(42, 157, 143, 0.45);
+  background: rgba(42, 157, 143, 0.08);
+}
+.model-card .model-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brass);
+  margin: 0 0 0.4rem;
+  font-weight: 600;
+}
+.model-card.call .model-label { color: var(--teal); }
