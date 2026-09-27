@@ -664,3 +664,76 @@ table.data a:hover { color: var(--cream); }
   font-size: 0.75rem;
   color: var(--cream-dim);
 }
+
+
+/* —— Travel · trip & activity cards —— */
+.trip-card .trip-facts,
+.activity-card .activity-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.85rem;
+  margin: 0.75rem 0 0;
+  font-size: 0.8rem;
+  color: var(--cream-muted);
+}
+
+.trip-card .trip-facts strong,
+.activity-card .activity-meta strong {
+  color: var(--cream);
+  font-weight: 500;
+}
+
+.trip-card .resort-name {
+  margin: 0.35rem 0 0;
+  font-size: 0.9rem;
+  color: var(--brass-soft);
+}
+
+.operator-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.operator-table th,
+.operator-table td {
+  text-align: left;
+  padding: 0.55rem 0.65rem;
+  border-bottom: 1px solid var(--charcoal-edge);
+}
+
+.operator-table th {
+  color: var(--cream-dim);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.operator-table .pending {
+  color: var(--cream-dim);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.pending-block {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border: 1px dashed var(--brass-line);
+  border-radius: var(--radius);
+  color: var(--cream-dim);
+  font-size: 0.9rem;
+  background: rgba(196, 163, 90, 0.04);
+}
+
+.breadcrumbs {
+  font-size: 0.75rem;
+  color: var(--cream-dim);
+  margin: 0 0 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+.breadcrumbs a { color: var(--cream-muted); }
+.breadcrumbs a:hover { color: var(--brass); }
+.breadcrumbs .sep { margin: 0 0.4rem; color: var(--brass-line); }

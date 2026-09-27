@@ -7,9 +7,10 @@
   document.querySelectorAll(".nav a[data-nav]").forEach(function (el) {
     var key = el.getAttribute("data-nav");
     var match =
-      (key === "home" && (file === "index.html" || file === "")) ||
+      (key === "home" && (file === "index.html" || file === "") && path.indexOf("/travel/") === -1 && path.indexOf("/missions/") === -1 && path.indexOf("/departments/") === -1) ||
       (key === "research" && file === "research.html") ||
       (key === "mission" && path.indexOf("/missions/") !== -1) ||
+      (key === "travel" && path.indexOf("/travel/") !== -1) ||
       (key === "investments" && file === "investments.html") ||
       (key === "lifestyle" && file === "lifestyle.html") ||
       (key === "prices" && file === "price-watches.html") ||
