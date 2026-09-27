@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Command Center · Mosaic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">Mosaic</span>
+        <span class="brand-sub">Command Center</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="research.html" data-nav="research">Research</a>
+        <a href="missions/king-bedding.html" data-nav="mission">Missions</a>
+        <a href="departments/investments.html" data-nav="investments" class="stub">Investments</a>
+        <a href="departments/lifestyle.html" data-nav="lifestyle" class="stub">Lifestyle</a>
+        <a href="departments/price-watches.html" data-nav="prices" class="stub">Prices</a>
+        <a href="departments/org.html" data-nav="org" class="stub">Org</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell">
+    <header class="page-hero">
+      <p class="eyebrow">Gilded Circuit · v1</p>
+      <h1>Command Center</h1>
+      <p class="lede">Quiet craft overview of departments and missions. Research inventory is live; expansion stubs mark where the org grows next.</p>
+      <div class="meta-row">
+        <span><strong>As of</strong> 2026-09-26 MT</span>
+        <span><strong>Owner</strong> Mosaic (Presentation)</span>
+        <span><strong>Source</strong> RESEARCH-INDEX + handoffs</span>
+      </div>
+    </header>
+
+    <div class="hairline"><span class="diamond" aria-hidden="true"></span> Status · Overview <span class="diamond" aria-hidden="true"></span></div>
+
+    <section class="grid grid-4" aria-label="Mission counts">
+      <div class="card stat-card">
+        <div class="stat-label">Active</div>
+        <div class="stat-num">0</div>
+        <p>No missions in flight</p>
+      </div>
+      <div class="card stat-card">
+        <div class="stat-label">Awaiting greenlight</div>
+        <div class="stat-num">2</div>
+        <p>King bedding insert + cover/sheets</p>
+      </div>
+      <div class="card stat-card">
+        <div class="stat-label">Parked</div>
+        <div class="stat-num">2</div>
+        <p>Same rows — research complete</p>
+      </div>
+      <div class="card stat-card">
+        <div class="stat-label">Done</div>
+        <div class="stat-num">0</div>
+        <p>None closed this cycle</p>
+      </div>
+    </section>
+
+    <div class="legend">
+      <span><span class="chip chip-parked">Parked</span></span>
+      <span><span class="chip chip-await">Awaiting greenlight</span></span>
+      <span><span class="chip chip-active">Active</span></span>
+      <span><span class="chip chip-done">Done</span></span>
+    </div>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Departments</h2>
+        <a class="aside-link" href="research.html">Open research inventory →</a>
+      </div>
+      <div class="grid grid-3">
+        <article class="card">
+          <h3>Lifestyle Ops</h3>
+          <p>Kestrel + Ranger + Anchor. Bedding pipeline live; King winter stack awaiting buy greenlight.</p>
+          <div class="card-meta">
+            <span class="chip chip-await">Awaiting greenlight</span>
+            <a class="card-link" href="missions/king-bedding.html">King bedding →</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Presentation</h3>
+          <p>Mosaic — Buy Briefs and this Command Center. Static, expandable, no live scrape.</p>
+          <div class="card-meta">
+            <span class="chip chip-active">Active</span>
+            <a class="card-link" href="research.html">Inventory →</a>
+          </div>
+        </article>
+        <article class="card stub">
+          <div class="coming">Coming soon</div>
+          <h3>Investments</h3>
+          <p>Sterling — intake only; no active research packs yet.</p>
+          <div class="card-meta">
+            <span class="chip chip-parked">Parked</span>
+            <a class="card-link" href="departments/investments.html">Stub →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Active / parked missions</h2>
+        <a class="aside-link" href="missions/king-bedding.html">Mission detail →</a>
+      </div>
+      <div class="table-wrap">
+        <table class="data">
+          <thead>
+            <tr>
+              <th>Topic</th>
+              <th>Status</th>
+              <th>Resume</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="topic"><a href="missions/king-bedding.html">King winter duvet insert</a></td>
+              <td><span class="chip chip-await">Awaiting greenlight</span> <span class="chip chip-parked">Parked</span></td>
+              <td><span class="mono">HANDOFF-king-bedding.md</span> + insert buy brief</td>
+            </tr>
+            <tr>
+              <td class="topic"><a href="missions/king-bedding.html">King duvet cover + sheets (cotton, no microfibre)</a></td>
+              <td><span class="chip chip-await">Awaiting greenlight</span> <span class="chip chip-parked">Parked</span></td>
+              <td><span class="mono">HANDOFF-king-bedding.md</span> + cover/sheets buy brief</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Expansion</h2>
+      </div>
+      <div class="grid grid-4">
+        <article class="card stub">
+          <div class="coming">Coming soon</div>
+          <h3>Investments</h3>
+          <p>Sterling desk — portfolios, intake, watchlists.</p>
+        </article>
+        <article class="card stub">
+          <div class="coming">Coming soon</div>
+          <h3>Lifestyle Ops</h3>
+          <p>Mission board beyond bedding.</p>
+        </article>
+        <article class="card stub">
+          <div class="coming">Coming soon</div>
+          <h3>Price watches</h3>
+          <p>Sale calendar · BF/Cyber · Anchor re-verify.</p>
+        </article>
+        <article class="card stub">
+          <div class="coming">Coming soon</div>
+          <h3>Org / team</h3>
+          <p>Roles, channels, pipeline owners.</p>
+        </article>
+      </div>
+    </section>
+
+    <aside class="resume-panel" aria-label="How to resume">
+      <h2>How to resume</h2>
+      <ol>
+        <li>Ask <strong>Jarvis</strong> to resume a parked mission, or open the handoff under <span class="mono">/workspace/briefs/</span>.</li>
+        <li>For King bedding: read <span class="mono">HANDOFF-king-bedding.md</span> + the two Buy Briefs — then re-verify live prices (Anchor) before any buy.</li>
+        <li>No checkout without explicit user greenlight naming what to buy.</li>
+      </ol>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div>Mosaic · Presentation <span class="pipe">|</span> Gilded Circuit</div>
+    <div>Static v1 · No login · No scrape · 2026-09-26 MT</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
